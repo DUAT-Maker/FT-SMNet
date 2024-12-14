@@ -16,7 +16,7 @@ Datasets are stored in the `datasets` folder.
 
 ### Batch Prediction for `FuXing.csv`
 ```bash
-sh scripts/exp_ori.sh
+sh scripts/exp_FuXing.sh
 ```
 
 ### Real-Time Prediction for `FuXing.csv`
@@ -26,7 +26,7 @@ sh scripts/exp_real_time.sh
 
 ### Batch Prediction for `FuXing_MAV.csv`
 ```bash
-sh scripts/exp_MAV.sh
+sh scripts/exp_FuXing_MAV.sh
 ```
 
 ## Model Performance

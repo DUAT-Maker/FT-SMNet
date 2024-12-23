@@ -1,7 +1,7 @@
 # FT-SMNet-pytorch
 This repository contains the PyTorch implementation of FT-SMNet, a temporal transformation network designed for structural health monitoring time series data forecasting. The project was submitted to *Mechanical Systems and Signal Processing* under the title: *"FT-SMNet: Fourier Transform Sparse Matrix Network for Structural Health Monitoring Time Series Data Forecasting."*
 
-## FT-SMNet
+## [FT-SMNet](https://www.sciencedirect.com/science/article/pii/S0888327024010951)
 
 
  **FT-SMNet** leverages both Fourier Transform and sparse matrices to process temporal data. The network primarily consists of two core modules: the **Fourier Transform (FT) block** and the **Sparse Matrix (SM) block**. The overall architecture of FT-SMNet is illustrated below:

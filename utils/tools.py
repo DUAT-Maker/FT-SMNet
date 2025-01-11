@@ -101,7 +101,6 @@ class StandardScaler():
         self.std = data.std(0)
 
     def transform(self, data):
-        # 首先判断源数据是否为tensor，如果是则将mean转为tensor，否则直接返回mean做计算
         mean = torch.from_numpy(self.mean).type_as(data).to(data.device) if torch.is_tensor(data) else self.mean
         std = torch.from_numpy(self.std).type_as(data).to(data.device) if torch.is_tensor(data) else self.std
         return (data - mean) / std

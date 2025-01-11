@@ -128,5 +128,4 @@ def time_features(dates, timeenc=1, freq='h'):
     if timeenc==1:
         dates = pd.to_datetime(dates.date.values)
 
-        #分别对时，日，星期，月进行编码，然后拼接
         return np.vstack([feat(dates) for feat in time_features_from_frequency_str(freq)]).transpose(1,0)

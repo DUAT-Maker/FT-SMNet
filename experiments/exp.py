@@ -164,10 +164,6 @@ class Exp(object):
         trues = []  
         pred_scales = []
         true_scales = []
-        FFT_pred = []
-        FFT_True = []
-        FFT_pred_scales = []
-        FFT_True_scales = []
         if evaluate:
             path = os.path.join(self.args.checkpoints, setting)
             best_model_path = path+'/'+'checkpoint.pth'
@@ -182,15 +178,8 @@ class Exp(object):
 
         preds = np.array(preds)
         trues = np.array(trues)
-
         pred_scales = np.array(pred_scales)
         true_scales = np.array(true_scales)
-
-        FFT_pred = np.array(FFT_pred)
-        FFT_True = np.array(FFT_True)
-
-        FFT_pred_scales = np.array(FFT_pred_scales)
-        FFT_True_scales = np.array(FFT_True_scales)
 
         preds = preds.reshape(-1, preds.shape[-2], preds.shape[-1])
         trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
